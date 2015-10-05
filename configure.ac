@@ -322,6 +322,9 @@ then
 	*-*-cygwin*)
 		ac_sys_system=Cygwin
 		;;
+	asmjs-*-*)
+		ac_sys_system=Emscripten
+		;;
 	*)
 		# for now, limit cross builds to known configurations
 		MACHDEP="unknown"
@@ -366,6 +369,9 @@ if test "$cross_compiling" = yes; then
 		esac
 		;;
 	*-*-cygwin*)
+		_host_cpu=
+		;;
+	asmjs-*-*)
 		_host_cpu=
 		;;
 	*)
