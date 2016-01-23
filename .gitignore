@@ -9,3 +9,10 @@ pyconfig.h
 config.log
 config.status
 Misc/python.pc
+
+# Binaries for the host system
+hostpython
+Parser/hostpgen
+
+# Configuration for Emscripten
+Lib/plat-emscripten/
